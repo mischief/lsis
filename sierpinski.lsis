@@ -8,8 +8,8 @@ addvar A
 addvar B
 
 # Constants
-addconst A
-addconst B
+addconst -
+addconst +
 
 # L-System rules
 addrule A B-A-B
