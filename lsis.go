@@ -59,7 +59,7 @@ func main() {
 	tgrules := lsystem.NewTurtleGraphicsRules()
 
 	ls := lsystem.NewLSystem("", &vars, &cons, rules)
-	tg := lsystem.NewTurtleGraphics(640, 480, tgrules)
+	tg := lsystem.NewTurtleGraphics(1024, 768, tgrules)
 
 	input := bufio.NewScanner(infile)
 
