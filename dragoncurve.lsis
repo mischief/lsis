@@ -1,0 +1,29 @@
+#!/usr/bin/env lsis
+
+# Initial state
+start FX
+
+# Variables
+addvar X
+addvar Y
+
+# Constants
+addconst F
+addconst +
+addconst -
+
+# L-System rules
+addrule X X+YF
+addrule Y FX-Y
+
+# Turtle Graphics drawing rules
+tgaddrule F drawfwd 10
+tgaddrule - turn -90
+tgaddrule + turn 90
+
+# Step the L-System 4 times
+step 10
+
+# Draw to internal buffer, save to sierpinski.png
+tgsave dragoncurve.png
+
