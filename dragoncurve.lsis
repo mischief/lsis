@@ -24,6 +24,6 @@ tgaddrule + turn 90
 # Step the L-System 4 times
 step 10
 
-# Draw to internal buffer, save to sierpinski.png
+# Draw to internal buffer, save to dragoncurve.png
 tgsave dragoncurve.png
 
