@@ -10,31 +10,6 @@ import (
 	"unicode/utf8"
 )
 
-var (
-/*
-	variables = []rune{'A', 'B'}
-	constants = []rune{'-', '+'}
-
-	rules = map[rune]string{
-		'A': "B-A-B",
-		'B': "A+B+A",
-	}
-
-	tg = map[rune]string{
-		'A': "drawForward 10",
-		'B': "drawForward 10",
-		'+': "turnLeft 60",
-		'-': "turnRight 60",
-	}
-
-	tgfuncs = map[string]lsystem.TGFunc{
-		"drawForward": DrawForward,
-		"turnLeft":    TurnLeft,
-		"turnRight":   TurnRight,
-	}
-*/
-)
-
 func FirstRune(s string) rune {
 	r, _ := utf8.DecodeRuneInString(s)
 	return r
