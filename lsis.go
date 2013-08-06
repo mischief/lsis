@@ -49,7 +49,7 @@ func main() {
 	if len(os.Args) == 2 {
 		var err error
 		if infile, err = os.Open(os.Args[1]); err != nil {
-			fmt.Fprintf(os.Stderr, "%s: %s", os.Args[1], err)
+			fmt.Fprintf(os.Stderr, "%s: %s\n", os.Args[1], err)
 			os.Exit(1)
 		}
 	}
