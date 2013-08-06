@@ -9,11 +9,11 @@ installation
 demo
 ----
 
-    lsis $GOPATH/github.com/mischief/lsis/sierpinski.lsis
+    lsis $GOPATH/src/github.com/mischief/lsis/sierpinski.lsis
 
 alternatively,
 
-    cd $GOPATH/github.com/mischief/lsis
+    cd $GOPATH/src/github.com/mischief/lsis
     ./sierpinski.lsis
 
 then open sierpinksi.png
