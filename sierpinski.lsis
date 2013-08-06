@@ -1,0 +1,29 @@
+#!/usr/bin/env lsis
+
+# Initial state
+start A
+
+# Variables
+addvar A
+addvar B
+
+# Constants
+addconst A
+addconst B
+
+# L-System rules
+addrule A B-A-B
+addrule B A+B+A
+
+# Turtle Graphics drawing rules
+tgaddrule A drawfwd 10
+tgaddrule B drawfwd 10
+tgaddrule - turn -60
+tgaddrule + turn 60
+
+# Step the L-System 4 times
+step 4
+
+# Draw to internal buffer, save to sierpinski.png
+tgsave sierpinski.png
+
